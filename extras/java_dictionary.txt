@@ -1,2 +1,14 @@
 pre
 int
+ogracias
+mrgracias
+oct
+gracias
+python
+replit
+gcd
+randrange
+randint
+gameplay
+divisibility
+accessors
