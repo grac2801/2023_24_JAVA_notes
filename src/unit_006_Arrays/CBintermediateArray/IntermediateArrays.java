@@ -5,8 +5,11 @@ public class IntermediateArrays
 
 	public static void main(String[] args)
 	{
-		int[] testArray = { 1, 2, 2, 1, 13 };
-		test13(testArray);
+		System.out.println("Hello");
+		int[] testArray = { 13, 1, 2, 13, 2, 1, 13};
+		int total = test13(testArray);
+		System.out.println(total);
+		
 	}
 
 	private static int test13(int[] myArray)
@@ -21,22 +24,23 @@ public class IntermediateArrays
 				total += myArray[index];
 				index += 1;
 			}
-			if(myArray[index] == 13)
+			else if(myArray[index] == 13)
 			{
-				if(index < myArray.length - 2)
+				if(index == myArray.length - 2)
 				{
 					total += 0;
-					index += 2;
+					return total;
 				}
-				if(index < myArray.length - 1)
+				if(index == myArray.length - 1)
 				{
 					total += 0;
 					return total;
 				}
 				total += 0;
+				index += 2;
 				
-			}
-		}
+			}//End of while
+		}//End of method
 		
 		return total;
 	}
