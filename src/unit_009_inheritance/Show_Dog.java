@@ -9,7 +9,7 @@ public class Show_Dog extends Adog
         this.owner = owner;
     }
     
-    public String toString(String owner)
+    public String toString()
     {
        return super.toString() + " The owner is " + getOwner();
     }
