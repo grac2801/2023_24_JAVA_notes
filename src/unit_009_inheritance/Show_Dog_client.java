@@ -8,6 +8,7 @@ public class Show_Dog_client
         Show_Dog showDog1 = new Show_Dog("Collie", 98, "Lassie", "brown", "Mr. G");
         System.out.println(showDog1);
         
+        
     }
 
 }
