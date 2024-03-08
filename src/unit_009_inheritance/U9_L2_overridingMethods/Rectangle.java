@@ -12,6 +12,7 @@ public class Rectangle extends Quadrilateral
     public int getPerimeter()
     {
         return super.getSide1() * 2 + super.getSide2() * 2;
+        
     }
     
     
