@@ -11,6 +11,35 @@ public class Adog
     private static int totalNumDogs;
 
     /**
+         * Default but adds a dog to total count
+         */
+        public Adog()
+        {
+            this.breed = "unknown";
+            this.weight = 0;
+            this.name = "none";
+            this.color = "unknown";
+    //        numberOfDogs();
+        }
+
+    /**
+     * Using mutator methods
+     * 
+     * @param breed
+     * @param color
+     * @param name
+     * @param weight
+     */
+    public Adog(String breed, String color, String name, int weight)
+    {
+        setBreed(breed);
+        setColor(color);
+        setName(name);
+        setWeight(weight);
+    
+    }
+
+    /**
      * all parameters constructor
      * 
      * @param breed
@@ -27,18 +56,6 @@ public class Adog
     }
 
     /**
-     * Default but adds a dog to total count
-     */
-    public Adog()
-    {
-        this.breed = "unknown";
-        this.weight = 0;
-        this.name = "none";
-        this.color = "unknown";
-//        numberOfDogs();
-    }
-
-    /**
      * Breed and name
      * 
      * @param breed
@@ -50,23 +67,6 @@ public class Adog
         this.name = name;
         this.weight = 0;
         this.color = "unknown";
-    }
-
-    /**
-     * Using mutator methods
-     * 
-     * @param breed
-     * @param color
-     * @param name
-     * @param weight
-     */
-    public Adog(String breed, String color, String name, int weight)
-    {
-        setBreed(breed);
-        setColor(color);
-        setName(name);
-        setWeight(weight);
-
     }
 
     public String getBreed()
@@ -109,11 +109,6 @@ public class Adog
         this.color = color;
     }
 
-    public String toString()
-    {
-        return "A " + getWeight() + " lb. " + getBreed() + " named " + getName() + " with " + getColor() + " fur.";
-    }
-
     public boolean equals(Adog otherDog)
     {
 
@@ -134,6 +129,11 @@ public class Adog
     {
         totalNumDogs += 1;
         return totalNumDogs;
+    }
+
+    public String toString()
+    {
+        return "A " + this.getWeight() + " lb. " + this.getBreed() + " named " + this.getName() + " with " + this.getColor() + " fur.";
     }
     
 }
