@@ -8,10 +8,10 @@ public class Animal
     private int age;
     private String sound;
     
-//    public Animal()
-//    {
-//        this("Black and white", 5, "rrrrh");
-//    }
+    public Animal()
+    {
+        this("Black and white", 5, "AaNnIiMmAaLllllll");
+    }
 
     public Animal(String color, int age, String sound)
     {
@@ -61,5 +61,10 @@ public class Animal
     public void setSound(String sound)
     {
         this.sound = sound;
+    }
+    
+    public String toString()
+    {
+        return "I am an animal";
     }
 }
