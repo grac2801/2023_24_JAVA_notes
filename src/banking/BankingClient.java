@@ -5,8 +5,13 @@ public class BankingClient
 
 	public static void main(String[] args)
 	{
-		BankAccount Oscar = new BankAccount(500.00);
-		Oscar.print();
+		BankAccount oscar = new BankAccount(500.25);
+		System.out.println(oscar);
+		
+		//withdraw
+		oscar.withdraw(475.23);
+		System.out.printf("%-6,.2f", oscar.getBalance());
+		
 		
 
 	}

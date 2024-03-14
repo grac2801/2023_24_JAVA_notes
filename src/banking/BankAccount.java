@@ -36,6 +36,17 @@ public class BankAccount
     
     public void print()
     { 
-    	System.out.printf("My account balance is $%-6.2f", this.getBalance());
+    	String answer = "";
+    	answer += "My account balance is: $";
+    	answer += Double.toString(this.getBalance());
+    	System.out.printf("My account balance is $%s", answer);
+    }
+    
+    public String toString()
+    {
+    	String answer = "";
+    	answer += "My account balance is: $";
+    	answer += Double.toString(this.getBalance());
+    	return answer;
     }
 }

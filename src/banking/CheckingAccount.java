@@ -16,9 +16,9 @@ public class CheckingAccount extends BankAccount
 	public void withdraw(double amount)
 	{
 		super.withdraw(amount);
-		if (super.getBalance() < 50.00)
+		if (super.getBalance() < MIN_BALANCE)
 		{
-			super.withdraw(2.00);
+			super.withdraw(FEE);
 		}
 	}
 }
