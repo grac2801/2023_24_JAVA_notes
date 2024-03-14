@@ -33,4 +33,9 @@ public class BankAccount
     {
         this.balance = amount;
     }
+    
+    public void print()
+    { 
+    	System.out.printf("My account balance is $%-6.2f", this.getBalance());
+    }
 }
