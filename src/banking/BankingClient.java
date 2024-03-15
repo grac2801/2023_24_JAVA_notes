@@ -10,7 +10,9 @@ public class BankingClient
 		
 		//withdraw
 		oscar.withdraw(475.23);
-		System.out.printf("%-6,.2f", oscar.getBalance());
+		double bal = oscar.getBalance();
+		System.out.printf("$%,.2f%n", oscar.getBalance());
+		System.out.println(oscar);
 		
 		
 
