@@ -1,5 +1,7 @@
 package banking;
 
+import java.text.DecimalFormat;
+
 public class BankAccount
 {
     private double balance;
@@ -46,7 +48,9 @@ public class BankAccount
     {
     	String answer = "";
     	answer += "My account balance is: $";
-    	answer += Double.toString(this.getBalance());
+    	DecimalFormat df = new DecimalFormat("#,###.##");
+    	
+    	answer += df.format(this.getBalance());
     	return answer;
     }
 }

@@ -1,5 +1,7 @@
 package banking;
 
+import java.text.DecimalFormat;
+
 public class CheckingAccount extends BankAccount
 {
 	private static final double FEE = 2.00;
@@ -21,4 +23,14 @@ public class CheckingAccount extends BankAccount
 			super.withdraw(FEE);
 		}
 	}
+	
+	public String toString()
+    {
+        String answer = "";
+        answer += "My checking account balance is: $";
+        DecimalFormat df = new DecimalFormat("#,###.##");
+        
+        answer += df.format(this.getBalance());
+        return answer;
+    }
 }

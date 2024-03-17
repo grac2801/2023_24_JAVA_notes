@@ -10,10 +10,14 @@ public class BankingClient
 		
 		//withdraw
 		oscar.withdraw(475.23);
-		double bal = oscar.getBalance();
-		System.out.printf("$%,.2f%n", oscar.getBalance());
 		System.out.println(oscar);
-		
+		//deposit
+		oscar.deposit(3425.89);
+		System.out.println(oscar);
+        
+		CheckingAccount ch1 = new CheckingAccount(1_000);
+		System.out.println(ch1);
+        
 		
 
 	}
